@@ -1,0 +1,13 @@
+train: ../train/images
+val: ../valid/images
+test: ../test/images
+
+nc: 14
+names: ['40 Pins', 'Audio Port', 'Bluetooth', 'CPU', 'Camera Port', 'Display Port', 'Ethernet Misaligned', 'Ethernet Port', 'Micro HDMI Ports', 'RAM', 'RAM Misaligned', 'Raspberry PI Logo', 'USB', 'USB-C Power Supply']
+
+roboflow:
+  workspace: gec-surat-fgufp
+  project: pcba-component-recognition-grbrp
+  version: 1
+  license: CC BY 4.0
+  url: https://universe.roboflow.com/gec-surat-fgufp/pcba-component-recognition-grbrp/dataset/1

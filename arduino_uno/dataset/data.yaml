@@ -1,0 +1,13 @@
+train: ../train/images
+val: ../valid/images
+test: ../test/images
+
+nc: 22
+names: ['16MHz Crystal', '47uF CAP', 'ATMEL328P', 'ATMega16u2', 'CD1206', 'Capa', 'Crystal', 'Fuse', 'LED', 'LMV358', 'M7 diode', 'Missing', 'PIN Header', 'Ports', 'Power', 'Regulator', 'Reset', 'Resistor', 'Resistor pack', 'SSOT3', 'USB', 'lp2985']
+
+roboflow:
+  workspace: gec-surat-fgufp
+  project: uno-automatic-optical-inspection-hv3ke
+  version: 2
+  license: CC BY 4.0
+  url: https://universe.roboflow.com/gec-surat-fgufp/uno-automatic-optical-inspection-hv3ke/dataset/2
