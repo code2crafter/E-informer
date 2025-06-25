@@ -15,9 +15,9 @@ os.makedirs(UPLOAD_FOLDER, exist_ok=True)
 os.makedirs(DETECTED_FOLDER, exist_ok=True)
 
 # Placeholder model paths (update with your actual trained weights)
-ARDUINO_MODEL_PATH = "C:/AMOL/runs/detect/AU_trained/weights/best.pt"
-RASPBERRY_MODEL_PATH = r"C:\AMOL\runs\detect\PI_trained\weights\best.pt"
-CUSTOM_MODEL_PATH = r"C:\AMOL\runs\detect\component_trained\weights\best.pt"
+ARDUINO_MODEL_PATH = "runs/detect/AU_trained/weights/best.pt"
+RASPBERRY_MODEL_PATH = r"runs/detect/PI_trained/weights/best.pt"
+CUSTOM_MODEL_PATH = r"runs/detect/component_trained/weights/best.pt"
 
 # Load models (replace paths above if needed)
 arduino_model = YOLO(ARDUINO_MODEL_PATH)
