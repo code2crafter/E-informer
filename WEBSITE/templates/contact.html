@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>📞 Contact Us - E-Informer Team</title>
+  <style>
+    body {
+      background-color: #1c1b2a;
+      color: #e0e0e0;
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background-color: #29283b;
+      color: #03dac6;
+      padding: 20px;
+      font-size: 1.5rem;
+      text-align: center;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      justify-items: center;
+      gap: 20px;
+      max-width: 600px;
+      margin: 40px auto;
+    }
+
+    .grid.center {
+      grid-template-columns: 1fr;
+    }
+
+    .member {
+      background-color: #2e2d40;
+      border-radius: 12px;
+      width: 220px;
+      text-align: center;
+      padding: 10px;
+      box-shadow: 0 0 8px #03dac6;
+    }
+
+    .member img {
+      width: 100%;
+      height: 220px;
+      object-fit: cover;
+      border-radius: 8px;
+      border: 2px solid #03dac6;
+    }
+
+    .name {
+      font-size: 1.1rem;
+      margin-top: 10px;
+      font-weight: bold;
+      color: #ffcc00;
+    }
+
+    .phone {
+      margin-top: 5px;
+      color: #03dac6;
+      font-size: 0.95rem;
+    }
+  </style>
+</head>
+<body>
+
+<header>📞 Meet Our Team - E-Informer</header>
+
+<div class="grid">
+  <div class="member">
+    <img src="{{ url_for('static', filename='team/amol.jpg') }}" alt="Amol">
+    <div class="name">Amol Koli</div>
+    <div class="enrollment">Er No. 220230111024</div>
+    <div class="email">amolk1014@gmail.com</div>
+    <div class="phone">+91-886633845</div>
+  </div>
+  <div class="member">
+    <img src="{{ url_for('static', filename='team/savita.jpg') }}" alt="Savita">
+    <div class="name">Savita Swami</div>
+    <div class="enrollment">Er No. 220230111061</div>
+    <div class="eamil">savitaswami3110@gmail.com</div>
+    <div class="phone">+91-8866743031</div>
+  </div>
+  <div class="member">
+    <img src="{{ url_for('static', filename='team/dhiraj.jpg') }}" alt="Dhiraj">
+    <div class="name">Dhiraj Patil</div>
+    <div class="enrollment">Er No. 220230111038</div>
+    <div class="email">dhirajpatil1604@gmail.com</div>
+    <div class="phone">+91-9313595470</div>
+  </div>
+  <div class="member">
+    <img src="{{ url_for('static', filename='team/richa.jpg') }}" alt="Richa">
+    <div class="name">Richa Ojha</div>
+    <div class="enrollment">Er No. 220230111032</div>
+    <div class="email">richa04015@gmail.com</div>
+    <div class="phone">+91-9974417109</div>
+  </div>
+  <div class="member">
+    <img src="{{ url_for('static', filename='team/alok.jpg') }}" alt="Alok">
+    <div class="name">Alok Bhonlse</div>
+    <div class="enrollment">Er No. 220230111008</div>
+    <div class="email">alok.bhonsle@gmail.com</div>
+    <div class="phone">+91-9106043219</div>
+  </div>
+  <div class="member">
+    <img src="{{ url_for('static', filename='team/upexa.jpg') }}" alt="Upexa">
+    <div class="name">Upexa Javiya</div>
+    <div class="enrollment">Er No. 220230111065</div>
+    <div class="email">xxxxxx@gmail.com</div>
+    <div class="phone">+91-8160988240</div>
+  </div>
+</div>
+
+<!-- DHRUVI centered on its own row -->
+<div class="grid center">
+  <div class="member">
+    <img src="{{ url_for('static', filename='team/dhruvi.jpg') }}" alt="Dhruvi">
+    <div class="name">Dhruvi Godhadiya</div>
+    <div class="enrollment">Er No. 220230111017</div>
+    <div class="email">gothdiyadhruvi@gmail.com</div>
+    <div class="phone">+91-8799657047</div>
+  </div>
+</div>
+
+</body>
+</html>

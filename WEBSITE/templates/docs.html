@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>📖 Documentation - E-Informer</title>
+  <style>
+    body {
+      background-color: #1c1b2a;
+      color: #e0e0e0;
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      padding: 0 20px;
+    }
+    header {
+      background-color: #29283b;
+      color: #03dac6;
+      padding: 20px;
+      font-size: 1.5rem;
+      text-align: center;
+    }
+    section {
+      margin: 30px auto;
+      max-width: 800px;
+      background-color: #2e2d40;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px #03dac6;
+    }
+    h2 {
+      color: #ffcc00;
+    }
+    p {
+      line-height: 1.6;
+    }
+    code {
+      background: #1c1c2c;
+      padding: 2px 6px;
+      border-radius: 4px;
+      color: #03dac6;
+    }
+    a {
+      color: #03dac6;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+
+<header>📖 E-Informer - Documentation</header>
+
+<section>
+  <h2>👋 Introduction</h2>
+  <p>
+    E-Informer is a web-based PCB image analyzer that uses YOLOv8 object detection models to identify and label components on PCB images for:
+  </p>
+  <ul>
+    <li>🔌 Arduino UNO</li>
+    <li>🍓 Raspberry Pi</li>
+    <li>🧩 Custom PCB Boards</li>
+  </ul>
+</section>
+
+<section>
+  <h2>📂 Uploading Images</h2>
+  <p>
+    Navigate to the <strong>Choose Board</strong> page and select your board type. Then:
+  </p>
+  <ol>
+    <li>Click on the upload form.</li>
+    <li>Select an image file (.jpg, .png).</li>
+    <li>Click <strong>Upload Image</strong>.</li>
+    <li>Wait for the result — the detected components will appear below.</li>
+  </ol>
+</section>
+
+<section>
+  <h2>🖼️ Supported Image Types</h2>
+  <p>
+    Only common image formats like <code>.jpg</code>, <code>.jpeg</code>, and <code>.png</code> are supported. Make sure the image is clear and taken from top view of the PCB.
+  </p>
+</section>
+
+<!-- <section>
+  <h2>📍 Output Location</h2>
+  <p>
+    Uploaded images are saved in <code>static/uploads/</code> and detected output is saved in <code>static/detected_images/</code>.
+  </p>
+</section> -->
+
+<section>
+  <h2>📡 Mobile Access</h2>
+  <p>
+    To access this site from your mobile phone:
+    <ul>
+      <li>Connect your phone and PC to the same Wi-Fi network.</li>
+      <li>Run the app using <code>app.run(host="0.0.0.0")</code>.</li>
+      <li>Visit <code>http://your_pc_ip:5000</code> from your mobile browser.</li>
+    </ul>
+  </p>
+</section>
+
+<section>
+  <h2>📞 Support</h2>
+  <p>
+    For any help or improvements, contact the developer or check back on the <a href="/contact">Contact Page</a>.
+  </p>
+</section>
+
+</body>
+</html>

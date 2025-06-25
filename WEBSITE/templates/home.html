@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>E-Informer - Home</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #1c1b2a;
+      color: #e0e0e0;
+    }
+
+    nav {
+      background-color: #29283b;
+      color: #03dac6;
+      padding: 15px;
+      font-weight: bold;
+      font-size: 1.3rem;
+      display: flex;
+      align-items: center;
+      position: relative;
+    }
+
+    .menu-icon {
+      font-size: 1.5rem;
+      cursor: pointer;
+      margin-right: 10px;
+    }
+
+    .nav-title {
+      margin-left: 10px;
+    }
+
+    .dropdown {
+      display: none;
+      position: absolute;
+      top: 60px;
+      left: 15px;
+      background-color: #29283b;
+      border: 1px solid #03dac6;
+      border-radius: 6px;
+      z-index: 10;
+    }
+
+    .dropdown a {
+      display: block;
+      padding: 10px;
+      color: #03dac6;
+      text-decoration: none;
+    }
+
+    .dropdown a:hover {
+      background-color: #1c1b2a;
+    }
+
+    .main-content {
+      text-align: center;
+      padding: 100px 20px;
+    }
+
+    .main-content h1 {
+      font-size: 2.2rem;
+      color: #ffcc00;
+      margin-bottom: 10px;
+    }
+
+    .main-content p {
+      font-size: 1.2rem;
+      max-width: 600px;
+      margin: 0 auto;
+      line-height: 1.5;
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <span class="menu-icon" onclick="toggleDropdown()">☰</span>
+    <span class="nav-title">E-Informer</span>
+    <div class="dropdown" id="dropdownMenu">
+      <a href="{{ url_for('choose_board') }}">📁 Choose Board</a>
+      <a href="{{ url_for('docs') }}">📚 Docs</a>
+      <a href="{{ url_for('contact') }}">📨 Contact</a>
+    </div>
+  </nav>
+
+  <div class="main-content">
+    <h1>E-Informer</h1>
+    <p>
+      Welcome to E-Informer – your intelligent assistant for PCB board detection and exploration. Select a board from the menu to begin.
+    </p>
+  </div>
+
+  <script>
+    function toggleDropdown() {
+      const menu = document.getElementById('dropdownMenu');
+      menu.style.display = menu.style.display === 'block' ? 'none' : 'block';
+    }
+  </script>
+</body>
+</html>
