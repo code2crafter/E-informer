@@ -46,9 +46,9 @@ seaborn==0.13.2
 six==1.16.0
 soupsieve==2.7
 sympy==1.13.3
-torch==2.7.0+cu118
-torchaudio==2.7.0+cu118
-torchvision==0.22.0+cu118
+torch==2.7.1
+torchaudio==2.7.1
+torchvision==0.22.0
 tqdm==4.66.4
 typing_extensions==4.12.2
 tzdata==2024.1
